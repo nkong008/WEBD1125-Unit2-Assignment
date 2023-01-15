@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&family=Nunito:wght@200;300;500&display=swap');
+// * selects all selector 
 * {
+    // using box models margins and paddings to set all elements
     padding: 0%;
     margin:0%;
     box-sizing: border-box;
@@ -8,15 +11,18 @@
 
 header {
     nav{
+        // id selector
         #haru {
             font-size: 2em;
             float: left;
+            // using box models margins to position elements 
             margin-top: 0.25em;
             margin-left: 1em;
         }
     }
     ul {
         float: right;
+        // using box models margins to position elements 
         margin-top: 1em;
         margin-right: 2em;
 
@@ -25,14 +31,118 @@ header {
             padding: 1em 0.45em;
             cursor: pointer;
             //loading transition which is applied in the li
-            transition: all 100ms linear;
-
+            transition: all 200ms linear;
+            border-radius: 30px;
+            
             a {
                 text-decoration: none;
                 font-weight: 400;
-                color: black;
+                color: rgb(0, 0, 0);
                 transition: all 100ms linear;
+                font-size: 1.2em;
+            }
+        }
+        // hover element
+        li:hover {
+            background-color: rgb(0, 0, 0);
+            a {
+                color: rgb(193, 221, 127);
             }
         }
     }
 }
+
+main {
+     //dont let other elements take up their space
+     clear: both;
+    //  used position relative which sets it to its normal position
+     position: relative;
+     top: 50px;
+     width: 1000px;
+     height: 2500px;
+     background-color:rgb(0, 0, 0);
+      //quickest way to center an element but it needs a width
+      // using box models margins to position elements 
+     margin: 0 auto;
+     section {
+       width: 600px;
+       height: 100px;
+     }
+    //  :nth-child() selector
+     section:nth-of-type(1) {
+        // using fixed position to make a cool effect of the header sliding all the way down
+        position: fixed;
+        color: rgb(193, 221, 127);
+        // using box models margins to position elements 
+        margin-left: 100px;
+        font-size: 3em;
+       
+     }
+    
+     }  
+     //  :nth-child() selector
+     section:nth-of-type(2) {
+        // using relative position to make content stay in certain spot
+        position: relative;
+        img {
+            width: 600px;
+            height: 700px;
+            // using box models margins to position elements 
+            margin-left: 100px;
+           margin-top: 200px;
+           border-radius: 20%;
+           opacity: 100%;
+        }
+        
+     }
+    //  section:nth-of-type(3) {
+    //     // using relative position to make content stay in certain spot
+    //     position: relative;
+    //     margin-left: 100px;
+    //     margin-top: 850px;
+    //     color: rgb(255, 255, 255);
+    //     font-weight: 100;
+    //     float: left;
+    //     font-size: 20px;
+    //  }
+     //  :nth-child() selector
+    section:nth-of-type(3) {
+        // using relative position to make content stay in certain spot
+        position: relative;
+        img {
+            width: 600px;
+            height: 700px;
+            // using box models margins to position elements 
+            margin-left: 350px;
+           margin-top: 1000px;
+           border-radius: 20%;
+           opacity: 80%;
+        }
+
+    }
+    //  :nth-child() selector
+    section:nth-of-type(4) {
+         // using relative position to make content stay in certain spot
+        position: relative;
+       button {
+        color: rgb(0, 0, 0);
+        border: none;
+        cursor: pointer;
+        font-size: 4em;
+        font-weight: 600;
+        background-color: rgb(193, 221, 127);
+        border-radius: 5%;
+        // using box models margins to position elements 
+        margin-top: 2000px;
+        margin-left: 100px;
+        }
+    }
+    // element selector 
+    p {
+        color: white;
+        // using box models margins to position elements 
+        margin-top: 1800px;
+        margin-left: 100px;
+        position: relative;
+    
+    }
