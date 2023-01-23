@@ -13,6 +13,15 @@ header nav #haru {
   margin-top: 0.25em;
   margin-left: 1em;
 }
+header nav .cat-icon {
+  width: 1.5em;
+  position: absolute;
+  margin-left: 150px;
+  fill: rgb(193, 221, 127);
+}
+header nav .user-path:hover {
+  fill: black;
+}
 header ul {
   float: right;
   margin-top: 1em;
@@ -21,7 +30,7 @@ header ul {
 header ul li {
   display: inline-block;
   padding: 1em 0.45em;
-  cursor: pointer;
+  cursor: url("../images/paw.png"), auto;
   transition: all 200ms linear;
   border-radius: 30px;
 }
@@ -31,6 +40,7 @@ header ul li a {
   color: rgb(0, 0, 0);
   transition: all 100ms linear;
   font-size: 1.2em;
+  cursor: url("../images/paw.png"), auto;
 }
 header ul li:hover {
   background-color: rgb(0, 0, 0);
@@ -89,7 +99,7 @@ section:nth-of-type(4) {
 section:nth-of-type(4) button {
   color: rgb(0, 0, 0);
   border: none;
-  cursor: pointer;
+  cursor: url("../images/paw.png"), auto;
   font-size: 4em;
   font-weight: 600;
   background-color: rgb(193, 221, 127);

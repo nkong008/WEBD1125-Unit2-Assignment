@@ -19,6 +19,16 @@ header {
             margin-top: 0.25em;
             margin-left: 1em;
         }
+        //editing cat icon with css
+        .cat-icon {
+            width: 1.5em;
+            position: absolute;
+            margin-left: 150px;
+            fill: rgb(193, 221, 127);
+        }
+        .user-path:hover {
+            fill: black;
+          }
     }
     ul {
         float: right;
@@ -29,7 +39,7 @@ header {
         li{
             display: inline-block;
             padding: 1em 0.45em;
-            cursor: pointer;
+            cursor: url("../images/paw.png"), auto;
             //loading transition which is applied in the li
             transition: all 200ms linear;
             border-radius: 30px;
@@ -40,6 +50,7 @@ header {
                 color: rgb(0, 0, 0);
                 transition: all 100ms linear;
                 font-size: 1.2em;
+                cursor: url("../images/paw.png"), auto;
             }
         }
         // hover element
@@ -127,7 +138,7 @@ main {
        button {
         color: rgb(0, 0, 0);
         border: none;
-        cursor: pointer;
+        cursor: url("../images/paw.png"), auto;
         font-size: 4em;
         font-weight: 600;
         background-color: rgb(193, 221, 127);
